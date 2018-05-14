@@ -1,4 +1,11 @@
 {"intents":[
+{"tag": "greeting",
+  "patterns": ["Hi", "Hello", "Hey", "Good Day", "How are you?", "is anyone there?", "how are you?"],
+  "responses" : ["Hello! Ask us any question about Luther!"]},
+{"tag": "goodbye",
+  "patterns": ["Good bye", "See ya", "Goodbye", "Bye", "talk to you again"],
+  "responses" : ["Thanks for talking. Come back again with any other questions!"]},
+
 {"tag": "christmas and spring break meals",
     "patterns": ["Are meals served on campus during Christmas and spring break?","will there be meals during Christmas break and spring break", "will there be meal served on campus during Christmas and spring break?"],
 "responses": ["No, the cafeteria is closed, but check out Oneota. Oneota is often open for breakfast and lunch during the week."]},
