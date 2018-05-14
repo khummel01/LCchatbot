@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/gadeta01/Dropbox/LCchatbot/model.tflearn"
+all_model_checkpoint_paths: "/home/gadeta01/Dropbox/LCchatbot/model.tflearn"
