@@ -32,7 +32,11 @@ with open('intents.json') as json_data:
 words = []
 classes = []
 documents = []
-ignore_words = ['?']
+with open("filler_words.txt") as f:
+    content = f.readlines()
+ignore_words = [x.strip() for x in content] 
+ignore_words.append('?')
+
 # loop through each sentence in our intents patterns
 for intent in intents['intents']:
     for pattern in intent['patterns']:
