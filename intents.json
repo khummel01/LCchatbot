@@ -345,7 +345,46 @@
     {"tag": "afternoon_workshop",
  "patterns": ["What is offered in the afternoon workshop?", "Is there an afternoon workshop?", "What is the afternoon workshop about?"],
          "responses": ["Every year, we hold a workshop for both teachers and students, and the topics vary every year. In the past, we have had topics such as collaboration as a pianist, harpsichord basics, piano mechanisms and acoustics, and many more. This year, we are holding two simultaneous workshops. Brian Knox will present a workshop titled, 'What's Inside Your Piano' and Jordan Buchholtz and Charles Hoeft will present a workshop titled, 'Preparing for a Professional Life in Music.'  Students and teachers can choose which session they would like to attend."],"context_set": ""
-        }
+        },
+  {"tag": "library_hours",
+     "patterns": ["When is the library open?", "What are the hours of Preus Library?", "At what times is the library open?"],
+             "responses": ["The library is open: Sunday: Noon - Midnight Mon.-Thur.: 7:30 a.m. - Midnight Friday: 7:30 a.m. - 9:00 p.m. Saturday: 9:00 a.m. - 9:00 p.m."],"context_set": ""
+            },
+  {"tag": "visit_times",
+    "patterns": ["When can I visit Luther?", "When can I schedule a visit day?", "Can I visit anytime during the week?"],
+            "responses": ["You can visit Monday through Friday. Schedule anytime between 8 to 5 p.m."],"context_set": ""
+            },
+  {"tag": "visit_times",
+    "patterns": ["When can I visit Luther?", "When can I schedule a visit day?", "Can I visit anytime during the week?"],
+            "responses": ["You can visit Monday through Friday. Schedule anytime between 8 to 5 p.m."],"context_set": ""
+            },
+  {"tag": "application_essay",
+    "patterns": ["Does the application require an essay?", "Do I have to write an essay to apply?", "Can I apply without an essay?"],
+            "responses": ["You must submit an essay. You can write a new one or submit something you’ve already written."],"context_set": ""
+            },
+  {"tag": "act_sat_scores",
+    "patterns": ["How can I submit my test scores?", "How do I submit my ACT score?", "How can I send my SAT score?"],
+            "responses": ["Check to see if your ACT or SAT test scores are included on your transcript. If not, ask your counselor to send us a copy. (Or include Luther on your list of colleges when you take the test.)"],"context_set": ""
+            },
+  {"tag": "online_application",
+    "patterns": ["How can I submit my application?", "Can I apply online?", "How can I apply?"],
+            "responses": ["Complete our online application or choose from one of the following options: The Common Application, Luther's Paper Application (Mail to Luther College Admissions, 700 College Drive, Decorah, IA 52101)"],
+            "context_set": ""
+            },
+  {"tag": "reference_form",
+    "patterns": ["How do I submit a letter of recommendation?", "Do I need a reference letter?", "How can my teacher complete the reference letter?"],
+            "responses": ["Ask a teacher or counselor to fill out the Educator's Reference form and send it to us. (A letter of reference via mail or email is also acceptable.)"]},
+  {"tag": "tuition",
+    "patterns": ["How much is tuition?", "What is the cost per year?", "How much does Luther cost per year?"],
+            "responses": ["The comprehensive fee for the 2018-19 academic year is $51,750. This breaks down as follows: Tuition $41,950 Double Room $4,420 Board $5,040 Technology Fee $340, However, there are many scholarship available as well."]},
+  {"tag": "luther_outcome",
+    "patterns": ["What is the value of a Luther education?", "What is the outcome of Luther?", "What are the post graduate statistics of Luther students?", ""],
+            "responses": ["Visit the Outcomes site to learn more about the value of a Luther College education. Here are a few highlights: All Luther students participate in distinctive, hands-on learning: internships, research, study abroad, student teaching, or service learning. 66–75 percent of Luther students study abroad during their time at Luther. 96-98 percent of Luther grads are employed, in graduate school, or engaged in an internship or volunteer work within 8 months of graduating. 87 percent of alumni report that they find their current job satisfying."]},
+  {"tag": "majors_minors",
+  "patterns": ["How many majors are there?", "What can I major in?", "What can I minor in?", "How many programs are offered?"],
+          "responses": ["There are 60+ Majors, Minors, and Programs at Luther"],
+          "context_set": ""
+          }
              
  ]}
 
