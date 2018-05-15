@@ -1,11 +1,13 @@
 {"intents":[
 {"tag": "greeting",
-  "patterns": ["Hi", "Hello", "Hey", "Good Day", "How are you?", "is anyone there?", "how are you?"],
+  "patterns": ["Hi", "Hello", "Hey", "Good Day", "is anyone there?"],
   "responses" : ["Hello! Ask us any question about Luther!"]},
+{"tag": "how_are_you",
+  "patterns": ["How are you today?", "How's it going?"],
+  "responses": ["I'm doing pretty great!", "Feelin' just fine!", "All is swell!"]},
 {"tag": "goodbye",
   "patterns": ["Good bye", "See ya", "Goodbye", "Bye", "talk to you again"],
   "responses" : ["Thanks for talking. Come back again with any other questions!"]},
-
 {"tag": "christmas and spring break meals",
     "patterns": ["Are meals served on campus during Christmas and spring break?","will there be meals during Christmas break and spring break", "will there be meal served on campus during Christmas and spring break?"],
 "responses": ["No, the cafeteria is closed, but check out Oneota. Oneota is often open for breakfast and lunch during the week."]},
@@ -80,7 +82,7 @@
   "responses":["It is not necessary, but some students have a local account just for convenience. Most local businesses will accept out-of-town checks with the student’s Luther ID. The Luther Book Shop will cash checks up to $25. The OFS, open to students from 9 a.m. – 4 p.m. Monday – Friday, will cash checks up to $150. The OFS will also open a student bank account for students; the account does not accrue interest. An automatic teller machine is located in the Centennial Union. It provides access to American Express, VISA, Discover, Shazam, Decorah Bank & Trust, Mastercard, Maestro, Cirrus, Quest, and Plus."]},
 {"tag":"financialAidLocation",
   "patterns":["Where is financial Aid office?","where is financial aid office located?","where can I find help for financial aid problems?"],
-  "responses":"The Financial Aid Office is located on the ground floor of Main."},
+  "responses":["The Financial Aid Office is located on the ground floor of Main."]},
 {"tag":"financialAidTasks",
   "patterns":["What services does the Financial Aid offer to students?","what can Financial Aid Office help me with?","What do Financial Aid Office do?"],
   "responses":["This office completes financial aid awards for incoming and returning students based on federal and state regulations. It also certifies student and parent loan applications and offers financial counseling for students."]},
@@ -100,252 +102,310 @@
   "patterns":["What is Nordic Cash?"],
   "responses":["NordiCash is a declining balance account that allows Luther students to use their Luther ID card as a debit card.  By pre-depositing money in this account, students may make 'cashless' purchases at several campus locations"]},
 
- {"tag": "financial_aid_1",
-         "patterns": ["Does Luther College have a priority filing date for financial aid?", "Is there a deadline for filing financial aid?", "Is there priority to filing financial aid early?"],
-         "responses": ["February 1st of each year is designated as Luther's priority filing date for incoming students.  This means we encourage families to have their FAFSA on file by February 1st.  This allows us adequate time to construct a financial aid package for the upcoming year.  The continuing student priority filing date has been moved to March 15th."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_1",
+       "patterns": ["Does Luther College have a priority filing date for financial aid?", "Is there a deadline for filing financial aid?", "Is there priority to filing financial aid early?"],
+       "responses": ["February 1st of each year is designated as Luther's priority filing date for incoming students.  This means we encourage families to have their FAFSA on file by February 1st.  This allows us adequate time to construct a financial aid package for the upcoming year.  The continuing student priority filing date has been moved to March 15th."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_2",
-         "patterns": ["How does the federal government come up with my EFC?", "What is the basis of the expected family contribution?", "How is my EFC determined?"],
-         "responses": ["A standard formula is used to evaluate the Expected Family Contribution (EFC) of all students. The main factors that drive EFC for a dependent student include a student's income and assets, income and assets of the parent(s) a student lives with, the number of family members in the student's household and the number of family members of that household in college (excluding parents)."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_2",
+       "patterns": ["How does the federal government come up with my EFC?", "What is the basis of the expected family contribution?", "How is my EFC determined?"],
+       "responses": ["A standard formula is used to evaluate the Expected Family Contribution (EFC) of all students. The main factors that drive EFC for a dependent student include a student's income and assets, income and assets of the parent(s) a student lives with, the number of family members in the student's household and the number of family members of that household in college (excluding parents)."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_3",
-         "patterns": ["My parents are divorced. Which parent's information should be reported on the FAFSA?", "My parents have separate finances. How should I fill out the FAFSA", "Which parent’s financial information should be on the FAFSA?"],
-         "responses": ["Generally speaking, you will use the information of the parent you have lived with most during the past twelve months. The instructions on the FAFSA are fairly precise in this area."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_3",
+       "patterns": ["My parents are divorced. Which parent's information should be reported on the FAFSA?", "My parents have separate finances. How should I fill out the FAFSA", "Which parent’s financial information should be on the FAFSA?"],
+       "responses": ["Generally speaking, you will use the information of the parent you have lived with most during the past twelve months. The instructions on the FAFSA are fairly precise in this area."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_4",
-         "patterns": ["Will my financial aid change in future years?", "Can my financial aid change in future year?", "Is there a possibility my financial aid will change in the future?"],
-         "responses": ["The results of the FAFSA each year are one of the main factors that drive the make-up of a financial aid package. If FAFSA results are similar each year, the financial aid package should be similar.The main components driving FAFSA results are family size, number of current college students in the family, and the income and assets of both the student and parents. Failure to meet renewal criteria for scholarships can also change a financial aid package."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_4",
+       "patterns": ["Will my financial aid change in future years?", "Can my financial aid change in future year?", "Is there a possibility my financial aid will change in the future?"],
+       "responses": ["The results of the FAFSA each year are one of the main factors that drive the make-up of a financial aid package. If FAFSA results are similar each year, the financial aid package should be similar.The main components driving FAFSA results are family size, number of current college students in the family, and the income and assets of both the student and parents. Failure to meet renewal criteria for scholarships can also change a financial aid package."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_5",
-         "patterns": ["Can we use the monthly payment plan in combination with student loans?", "Is the monthly payment plan compatible with student loans?", "Can I use student loans and a monthly payment plan?"],
-         "responses": ["The monthly payment plan can be used in combination with both student and parent loans to assist in paying any remaining balance to the college."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_5",
+       "patterns": ["Can we use the monthly payment plan in combination with student loans?", "Is the monthly payment plan compatible with student loans?", "Can I use student loans and a monthly payment plan?"],
+       "responses": ["The monthly payment plan can be used in combination with both student and parent loans to assist in paying any remaining balance to the college."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_6",
-         "patterns": ["Can PLUS loans be put into deferment?", "Can I defer PLUS loans?", "Are plusloans deferrable?"],
-         "responses": ["Yes, PLUS loans can be deferred while the student is enrolled in college on at least a half-time basis. The parent borrower can either request the deferment at the time they complete the online loan application or they can contact their loan servicer and request the deferment once the loan has been disbursed."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_6",
+       "patterns": ["Can PLUS loans be put into deferment?", "Can I defer PLUS loans?", "Are plusloans deferrable?"],
+       "responses": ["Yes, PLUS loans can be deferred while the student is enrolled in college on at least a half-time basis. The parent borrower can either request the deferment at the time they complete the online loan application or they can contact their loan servicer and request the deferment once the loan has been disbursed."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_7",
-         "patterns": ["How do I pay the interest that will accrue on my unsubsidized and private loans?", "When do I pay interest on unsubsidized loans?", "What is the situation for interest on unsubsidized and private loans?"],
-         "responses": ["You will need to contact your lender for specific instructions on making interest only payments on loans while you are enrolled, as procedures may vary by lender. We strongly encourage students and their families to pay this interest as it accrues to help lower the overall cost of the loan."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_7",
+       "patterns": ["How do I pay the interest that will accrue on my unsubsidized and private loans?", "When do I pay interest on unsubsidized loans?", "What is the situation for interest on unsubsidized and private loans?"],
+       "responses": ["You will need to contact your lender for specific instructions on making interest only payments on loans while you are enrolled, as procedures may vary by lender. We strongly encourage students and their families to pay this interest as it accrues to help lower the overall cost of the loan."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_8",
-         "patterns": ["Why is the college encouraging me to sign up for direct deposit?", "Why should I sign up for direct deposit?", "What is the benefit of direct deposit?"],
-         "responses": ["Direct Deposit allows the recipient of funds quicker access to those funds without the hassle of keeping track of a paper check and making a trip to the bank. Direct Deposit is also less costly for the college to administer and serves as an efficient means to process payments."],
-         "context_set": ""
-        },
- {"tag": "financial_aid_9",
-         "patterns": ["How will a job loss of one of my parents affect my financial aid?", "What happens if one of my parents loses their job?", "What if my parent’s income is reduced?"],
-         "responses": ["Job losses of a parent should be discussed with a member of the financial aid staff. In many cases, a loss of income will increase the amount of financial aid a student is eligible to receive. This, however, is dependent on the percentage of income lost when compared to adjusted gross income and reported assets."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_8",
+       "patterns": ["Why is the college encouraging me to sign up for direct deposit?", "Why should I sign up for direct deposit?", "What is the benefit of direct deposit?"],
+       "responses": ["Direct Deposit allows the recipient of funds quicker access to those funds without the hassle of keeping track of a paper check and making a trip to the bank. Direct Deposit is also less costly for the college to administer and serves as an efficient means to process payments."],
+       "context_set": ""
+      },
+{"tag": "financial_aid_9",
+       "patterns": ["How will a job loss of one of my parents affect my financial aid?", "What happens if one of my parents loses their job?", "What if my parent’s income is reduced?"],
+       "responses": ["Job losses of a parent should be discussed with a member of the financial aid staff. In many cases, a loss of income will increase the amount of financial aid a student is eligible to receive. This, however, is dependent on the percentage of income lost when compared to adjusted gross income and reported assets."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_10",
-         "patterns": ["Why has my friend received his financial aid award but I have not?", "My classmate received her financial aid award but I did not.", "Why have I not received my award but others have?"],
-         "responses": ["Prospective students must be admitted to the college in order to receive a financial aid award. Receipt of the award is also dependent on documents we may need from a student and/or their parents to complete the award.Our office will also hold an award if we expect a student to complete a music audition or if we are waiting on new transcripts or test scores.Continuing students receive an award once they are registered for the upcoming year and have submitted all necessary documents to complete their financial aid file."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_10",
+       "patterns": ["Why has my friend received his financial aid award but I have not?", "My classmate received her financial aid award but I did not.", "Why have I not received my award but others have?"],
+       "responses": ["Prospective students must be admitted to the college in order to receive a financial aid award. Receipt of the award is also dependent on documents we may need from a student and/or their parents to complete the award.Our office will also hold an award if we expect a student to complete a music audition or if we are waiting on new transcripts or test scores.Continuing students receive an award once they are registered for the upcoming year and have submitted all necessary documents to complete their financial aid file."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_11",
-         "patterns": ["I don't want to work my first semester at Luther. Can I still get a job second semester?", "Can I start work study my second semester?", "Can I reject work study and still get it later?"],
-         "responses": ["Many students choose not to work during their first semester at Luther. Students who do this can still secure a job for second semester by reviewing job postings on the financial aid website. The Student Employment Office does not assign placements after the initial placement is made."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_11",
+       "patterns": ["I don't want to work my first semester at Luther. Can I still get a job second semester?", "Can I start work study my second semester?", "Can I reject work study and still get it later?"],
+       "responses": ["Many students choose not to work during their first semester at Luther. Students who do this can still secure a job for second semester by reviewing job postings on the financial aid website. The Student Employment Office does not assign placements after the initial placement is made."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_12",
-         "patterns": ["When should I report outside scholarships to the Financial Aid Office?", "When should private scholarships be reported?", "If I receive other scholarships, when should I report them to Luther?"],
-         "responses": ["Outside scholarships are usually reported to the Financial Aid Office in the summer once a student feels they have heard from all of the entities to which they applied for a scholarship. Many students bring this information with them to summer registration. It is recommended that these scholarships be reported prior to July 1, so accurate billings can be calculated."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_12",
+       "patterns": ["When should I report outside scholarships to the Financial Aid Office?", "When should private scholarships be reported?", "If I receive other scholarships, when should I report them to Luther?"],
+       "responses": ["Outside scholarships are usually reported to the Financial Aid Office in the summer once a student feels they have heard from all of the entities to which they applied for a scholarship. Many students bring this information with them to summer registration. It is recommended that these scholarships be reported prior to July 1, so accurate billings can be calculated."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_13",
-         "patterns": ["If we don't accept the loans in the financial aid package now, can we utilize them later if needed?", "If I don’t want a loan now, can I have it later?", "Can I decline a loan now and utilize it later?"],
-         "responses": ["In most cases, loans declined now can be reinstated later in the academic year as long as the student is enrolled at least half time and making satisfactory academic progress at the time the request is made."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_13",
+       "patterns": ["If we don't accept the loans in the financial aid package now, can we utilize them later if needed?", "If I don’t want a loan now, can I have it later?", "Can I decline a loan now and utilize it later?"],
+       "responses": ["In most cases, loans declined now can be reinstated later in the academic year as long as the student is enrolled at least half time and making satisfactory academic progress at the time the request is made."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_14",
-         "patterns": ["Why do I have to include my parents' information on the FAFSA when they don't claim me on their taxes?", "Do I have to include my parents’ financial information if they don’t claim me as a dependent?", "Can I omit my parents’ information on the FAFSA?"],
-         "responses": ["A series of thirteen questions on the FAFSA determine a student's dependency status. The U.S. Department of Education's definition of a dependent student is different than that used by the Internal Revenue Service."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_14",
+       "patterns": ["Why do I have to include my parents' information on the FAFSA when they don't claim me on their taxes?", "Do I have to include my parents’ financial information if they don’t claim me as a dependent?", "Can I omit my parents’ information on the FAFSA?"],
+       "responses": ["A series of thirteen questions on the FAFSA determine a student's dependency status. The U.S. Department of Education's definition of a dependent student is different than that used by the Internal Revenue Service."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_15",
-         "patterns": ["Why was only half of my aid credited to my account?", "Why did I only received half of my financial aid? ", "Do I only receive half of financial aid in the fall?"],
-         "responses": ["Most financial aid is credited to a student's account at the rate of one-half each semester. As a general rule, financial aid is credited to a student's account no sooner than ten days prior to the start of each semester if all documents are returned."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_15",
+       "patterns": ["Why was only half of my aid credited to my account?", "Why did I only received half of my financial aid? ", "Do I only receive half of financial aid in the fall?"],
+       "responses": ["Most financial aid is credited to a student's account at the rate of one-half each semester. As a general rule, financial aid is credited to a student's account no sooner than ten days prior to the start of each semester if all documents are returned."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_16",
-         "patterns": ["How many months is the monthly payment plan? When does it begin and end?", "When are the monthly payment plan payments? ", "For what months is the monthly payment plan?"],
-         "responses": ["The payment plan is spread over eight months. Payments for the fall semester begin in July and end in October. Spring semester payments begin in December and end in March.  Payments are due by the 15th of each month."],
-         "context_set": ""
-        },
- {"tag": "financial_aid_17",
-         "patterns": ["What lender should I use for my private loan?", "Where should I get a private loan? ", "How can I get a private loan?"],
-         "responses": ["Each private loan lender's loan terms and conditions will vary. Therefore, what may be right for one family may not be for another. The financial aid website contains a preferred list of lenders that offer competitive terms as well as a link to frequently asked questions regarding private loan borrowing."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_16",
+       "patterns": ["How many months is the monthly payment plan? When does it begin and end?", "When are the monthly payment plan payments? ", "For what months is the monthly payment plan?"],
+       "responses": ["The payment plan is spread over eight months. Payments for the fall semester begin in July and end in October. Spring semester payments begin in December and end in March.  Payments are due by the 15th of each month."],
+       "context_set": ""
+      },
+{"tag": "financial_aid_17",
+       "patterns": ["What lender should I use for my private loan?", "Where should I get a private loan? ", "How can I get a private loan?"],
+       "responses": ["Each private loan lender's loan terms and conditions will vary. Therefore, what may be right for one family may not be for another. The financial aid website contains a preferred list of lenders that offer competitive terms as well as a link to frequently asked questions regarding private loan borrowing."],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_18",
-         "patterns": ["Does an outside scholarship check that is made out only to the student and sent to them at their home address need to be reported to the Financial Aid Office?", "Do I need to report all scholarships? ", "What if I don’t report a scholarship to the office of financial aid?"],
-         "responses": ["All outside scholarships must be reported to the Financial Aid Office as federal regulations require that outside scholarships be considered as a part of the total financial aid package.  The Luther College Financial Aid Office will reflect those scholarships on an award letter as ‘Outside Scholarship Received By Student’. "],
-         "context_set": ""
-        },
+{"tag": "financial_aid_18",
+       "patterns": ["Does an outside scholarship check that is made out only to the student and sent to them at their home address need to be reported to the Financial Aid Office?", "Do I need to report all scholarships? ", "What if I don’t report a scholarship to the office of financial aid?"],
+       "responses": ["All outside scholarships must be reported to the Financial Aid Office as federal regulations require that outside scholarships be considered as a part of the total financial aid package.  The Luther College Financial Aid Office will reflect those scholarships on an award letter as ‘Outside Scholarship Received By Student’. "],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_19",
-         "patterns": ["Can financial aid be used to pay for books?", "Can I use scholarships to buy books? ", "What money can be used for books?"],
-         "responses": ["Financial aid can be used to pay for books once the student has a remaining credit balance on their student account after other charges have been paid.  Students will need to complete a refund request with the Financial Services Office.  The earliest refunds are issued is one day prior to the start of each semester. "],
-         "context_set": ""
-        },
+{"tag": "financial_aid_19",
+       "patterns": ["Can financial aid be used to pay for books?", "Can I use scholarships to buy books? ", "What money can be used for books?"],
+       "responses": ["Financial aid can be used to pay for books once the student has a remaining credit balance on their student account after other charges have been paid.  Students will need to complete a refund request with the Financial Services Office.  The earliest refunds are issued is one day prior to the start of each semester. "],
+       "context_set": ""
+      },
 
- {"tag": "financial_aid_20",
-         "patterns": ["Can I have more than one work-study job?", "Can I have more than one job on campus?", "How many work study jobs can I have?"],
-         "responses": ["A student can have multiple positions, but the total hours per week for all positions cannot exceed what is allowed in the work-study award. This is generally between six to ten hours per week."],
-         "context_set": ""
-        },
- {"tag": "financial_aid_21",
-         "patterns": ["Why are you requesting an IRS Tax Return Transcript instead of allowing us to provide signed copies of our tax returns?", "Why is an IRS Tax Return Transcript needed?", "Why can’t I provide a signed copy of my tax return?"],
-         "responses": ["Federal regulations now require that we collect an IRS Tax Return Transcript from any applicant and their parents (if the student is dependent) to process verification.  Utilizing the FAFSA-IRS Data Retrieval Tool when completing or correcting the FAFSA lessens the likelihood that an application will be selected for verification."],
-         "context_set": ""
-        },
+{"tag": "financial_aid_20",
+       "patterns": ["Can I have more than one work-study job?", "Can I have more than one job on campus?", "How many work study jobs can I have?"],
+       "responses": ["A student can have multiple positions, but the total hours per week for all positions cannot exceed what is allowed in the work-study award. This is generally between six to ten hours per week."],
+       "context_set": ""
+      },
+{"tag": "financial_aid_21",
+       "patterns": ["Why are you requesting an IRS Tax Return Transcript instead of allowing us to provide signed copies of our tax returns?", "Why is an IRS Tax Return Transcript needed?", "Why can’t I provide a signed copy of my tax return?"],
+       "responses": ["Federal regulations now require that we collect an IRS Tax Return Transcript from any applicant and their parents (if the student is dependent) to process verification.  Utilizing the FAFSA-IRS Data Retrieval Tool when completing or correcting the FAFSA lessens the likelihood that an application will be selected for verification."],
+       "context_set": ""
+      },
 
 {"tag": "financial_aid_22",
-         "patterns": ["Can I borrow my federal loans from a hometown bank?", "Can I use my local bank for student loans?", "Can my hometown bank provide federal student loans?"],
-         "responses": ["Since Luther College utilizes the Federal Direct Loan program; a student would borrow their federal Stafford and PLUS loans directly from the government and would not need to utilize their hometown bank for this purpose."],
-         "context_set": ""
-        },
+       "patterns": ["Can I borrow my federal loans from a hometown bank?", "Can I use my local bank for student loans?", "Can my hometown bank provide federal student loans?"],
+       "responses": ["Since Luther College utilizes the Federal Direct Loan program; a student would borrow their federal Stafford and PLUS loans directly from the government and would not need to utilize their hometown bank for this purpose."],
+       "context_set": ""
+      },
 
 {"tag": "financial_aid_23",
-         "patterns": ["How many hours of work study are allowed each week?", "How many hours can I work each week?", "Can I work as much as I want each week?"],
-         "responses": ["Most work-study awards allow for a student to work an average of six to ten hours per week throughout the academic year. International students are allowed to work up to thirteen hours per week because the law generally does not allow them to work off campus.  Continuing students who are also resident assistants (RAs) are limited to three hours per week due to the work requirements of a RA position."],
-         "context_set": ""
-        },
+       "patterns": ["How many hours of work study are allowed each week?", "How many hours can I work each week?", "Can I work as much as I want each week?"],
+       "responses": ["Most work-study awards allow for a student to work an average of six to ten hours per week throughout the academic year. International students are allowed to work up to thirteen hours per week because the law generally does not allow them to work off campus.  Continuing students who are also resident assistants (RAs) are limited to three hours per week due to the work requirements of a RA position."],
+       "context_set": ""
+      },
 
 {"tag": "financial_aid_24",
-         "patterns": ["When do I find out where I will work?", "Where is my work study job assignment?", "When will my work study be assigned to me?"],
-         "responses": ["Work-study assignments for first-year students are given out during the Registration, Orientation and Advising Days (ROAD) held each May and June."],
-         "context_set": ""
-        },
+       "patterns": ["When do I find out where I will work?", "Where is my work study job assignment?", "When will my work study be assigned to me?"],
+       "responses": ["Work-study assignments for first-year students are given out during the Registration, Orientation and Advising Days (ROAD) held each May and June."],
+       "context_set": ""
+      },
 
 {"tag": "financial_aid_25",
-         "patterns": ["My Student Aid Report says I don't qualify for a Federal Pell Grant. Does that mean I'm not eligible for financial aid?", "I don’t have a Federal Pell Grant. Can I still get other financial aid?", "Why does it say I don’t qualify for a Federal Pell Grant?"],
-         "responses": ["Usually not. The majority of Luther's students are not eligible for a Federal Pell Grant, but are eligible for a variety of other types of aid including scholarships, grants, work-study and student loans."],
-         "context_set": ""
-        },
+       "patterns": ["My Student Aid Report says I don't qualify for a Federal Pell Grant. Does that mean I'm not eligible for financial aid?", "I don’t have a Federal Pell Grant. Can I still get other financial aid?", "Why does it say I don’t qualify for a Federal Pell Grant?"],
+       "responses": ["Usually not. The majority of Luther's students are not eligible for a Federal Pell Grant, but are eligible for a variety of other types of aid including scholarships, grants, work-study and student loans."],
+       "context_set": ""
+      },
 
 {"tag": "financial_aid_26",
-         "patterns": ["In what cases would a FAFSA applicant be ineligible to use the FAFSA-IRS Data Retrieval Tool?", "Can I use the FAFSA-IRS Data retrieval tool?", "Why am I ineligible to use the FAFSA-IRS Data Retrieval tool?"], "responses": ["A student would be ineligible to use the FAFSA IRS Data Retrieval Tool in the following situations: 1.The dependent student's parents are married, but file separate tax returns. 2.It has been less than 2 weeks since the tax returns were electronically filed (allow 8 weeks for paper filing). 3.The independent student is married and files a tax return separate of their spouse. 4. The tax return filing status on the FASFA is marked as 'I will file, but I have not completed my tax return'. 5. The applicant's marital status has changed since January 1 of the processing year. 6.Either the student or their parents (in the case of a dependent student) has amended their tax return."],
-         "context_set": ""
-        },
+       "patterns": ["In what cases would a FAFSA applicant be ineligible to use the FAFSA-IRS Data Retrieval Tool?", "Can I use the FAFSA-IRS Data retrieval tool?", "Why am I ineligible to use the FAFSA-IRS Data Retrieval tool?"], "responses": ["A student would be ineligible to use the FAFSA IRS Data Retrieval Tool in the following situations: 1.The dependent student's parents are married, but file separate tax returns. 2.It has been less than 2 weeks since the tax returns were electronically filed (allow 8 weeks for paper filing). 3.The independent student is married and files a tax return separate of their spouse. 4. The tax return filing status on the FASFA is marked as 'I will file, but I have not completed my tax return'. 5. The applicant's marital status has changed since January 1 of the processing year. 6.Either the student or their parents (in the case of a dependent student) has amended their tax return."],
+       "context_set": ""
+      },
 
 {"tag": "financial_aid_27",
-         "patterns": ["What is the IRS Data Retrieval Process and why should it be used?", "Why should I use the IRS Data Retrieval Process?", "What is the benefit to using the IRS Data Retrieval Process?"],
-         "responses": ["The FAFSA-IRS Data Retrieval Tool is a function that students can use while completing a FAFSA on the web that will allow both the student's and their parent(s) (if dependent) IRS tax filing data to be automatically transferred to the correct lines on the FAFSA.  The main benefit of utilizing this feature is that the correct tax information is populated on the correct lines of the FAFSA.  A secondary benefit to using this process is that the applicant's FAFSA data is less likely to be selected for verification."],
-         "context_set": ""
-        },
+       "patterns": ["What is the IRS Data Retrieval Process and why should it be used?", "Why should I use the IRS Data Retrieval Process?", "What is the benefit to using the IRS Data Retrieval Process?"],
+       "responses": ["The FAFSA-IRS Data Retrieval Tool is a function that students can use while completing a FAFSA on the web that will allow both the student's and their parent(s) (if dependent) IRS tax filing data to be automatically transferred to the correct lines on the FAFSA.  The main benefit of utilizing this feature is that the correct tax information is populated on the correct lines of the FAFSA.  A secondary benefit to using this process is that the applicant's FAFSA data is less likely to be selected for verification."],
+       "context_set": ""
+      },
 
 {"tag": "financial_aid_28",
-         "patterns": ["Does it cost anything to participate in the monthly payment plan?", "Is there extra cost to use the monthly payment plane?", "Will I pay the same amount if I pay through the monthly payment plan?"],
-         "responses": ["Our payment plan is administered in-house; therefore, there is no cost to participate in the plan as long as payments are automatically withdrawn from a bank account."],
-         "context_set": ""
-        },
+       "patterns": ["Does it cost anything to participate in the monthly payment plan?", "Is there extra cost to use the monthly payment plane?", "Will I pay the same amount if I pay through the monthly payment plan?"],
+       "responses": ["Our payment plan is administered in-house; therefore, there is no cost to participate in the plan as long as payments are automatically withdrawn from a bank account."],
+       "context_set": ""
+      },
 
 {"tag": "financial_aid_29",
-         "patterns": ["What financial aid forms am I missing and where do I find those forms?", "What are all the forms I need?", "Where can I see what forms I need?"],
-         "responses": ["The Financial Aid Office will notify prospective students of needed forms via mail, e-mail or telephone as required in order to create a financial aid award. Students who choose to attend Luther will receive a mailed notice of forms needed to complete their file in May of the year they will start college. Once a student begins attendance at Luther, requests for forms are sent via e-mail and a list of needed forms can also be viewed on a student's My.luther account. Most forms that are being requested can be downloaded within Forms (http://www.luther.edu/financial-aid/forms/)."],
-         "context_set": ""
-        },
+       "patterns": ["What financial aid forms am I missing and where do I find those forms?", "What are all the forms I need?", "Where can I see what forms I need?"],
+       "responses": ["The Financial Aid Office will notify prospective students of needed forms via mail, e-mail or telephone as required in order to create a financial aid award. Students who choose to attend Luther will receive a mailed notice of forms needed to complete their file in May of the year they will start college. Once a student begins attendance at Luther, requests for forms are sent via e-mail and a list of needed forms can also be viewed on a student's My.luther account. Most forms that are being requested can be downloaded within Forms (http://www.luther.edu/financial-aid/forms/)."],
+       "context_set": ""
+      },
 {"tag": "need_computer",
-         "patterns": ["Do I need a computer?", "Is a computer needed for classes?", "Computer required?"],
-         "responses": ["Most Luther students bring a computer to campus, but it’s not required. Luther has over 500 computers in 20+ general computing labs and classrooms including mini labs in most residence halls. In additional, there are specialized departmental labs, computer stations in the Union, Kiosks in various locations around campus (e.g. Union, Preus Library, Koren, Sampson-Hoffland, Regents Center) and laptops available for check out in the Library."]},
- {"tag": "internet_acces_in_dorms",
-         "patterns": ["Can I get connected to the internet from my room?", "Do I have internet access in my dorm room?", "Access to internet in residence halls?"],
-          "responses": ["Yes. All students living in the dorms have access to ResNet, a high speed Internet connection that is provided at no additional charge. More information can be found at the ResNet Service Page on www.luther.edu"],
-  "context_set": ""
-        },
- {"tag": "setup_personal_network",
-         "patterns": ["Can I setup my own network in my room?", "Can I create my own network?", "Is it possible for me to create my own network in my dorm?"],
-         "responses": ["No. In order to preserve the health of the campus network, individuals are not allowed to connect personal routers or switches to their network port. This restriction includes personal wireless devices such as routers, hubs, or switches (a.k.a. access points). While these devices are often desirable to individual users, use can interfere with the network and cause large-scale network outages. Luther’s wireless initiative aims to provide wireless access to public spaces in residence halls when technically feasible."],   "context_set": ""
-        },
- {"tag": "type_of_compter",
-         "patterns": ["If I buy a computer, what type should I buy?", "What kind of computer should I buy?", "What computer should I get?"],
-         "responses": ["Luther does not require a specific brand or type of computer, nor do we sell new computers. However we do recommend the following two companies, Apple and Dell, who offer discounts to students. As a general rule, the higher the specifications on a computer, the longer its useful lifespan will be. Every year, ITS rolls out new computers to the faculty. The below are the technical specs of the machines they’ll be receiving this year. We hope this gives you an idea of what we think will work for the faculty and maybe an idea of what to purchase for yourself."],   "context_set": ""
-        },
- {"tag": "wireless_internet_campus",
-         "patterns": ["Is there wireless internet on campus?", "Is there internet on campus?", "Is there internet access at Luther?"],
-         "responses": ["Yes. Wireless Internet is available in all campus buildings and residence halls. For best performance on Luther’s wireless network, make sure your device supports 802.11ac wireless standard. Most current devices support this. Note that as of Fall 2016, 802.11b is no longer supported on campus. (Other wireless standards will work but at decreased performance.) Visit https://www.luther.edu/helpdesk/wirelessnetworks/ for complete information."],   "context_set": ""
-        },
- {"tag": "laptop_or_desktop",
-         "patterns": ["Should I buy a laptop or desktop?", "Is a laptop or desktop recommended?", "Which is prefered, a laptop or a desktop?"],
-         "responses": ["This comes down to a personal choice. Personal laptops are not required nor expected. A laptop takes up less space and with a wireless card, can be used just about anywhere on campus. The cost of a laptop is higher though. Desktop computers are cheaper and generally have more power. However, you will give up space in your room plus have to purchase a monitor, external keyboard, and mouse."],   "context_set": ""
-        },
- {"tag": "will_my_computer_work",
-         "patterns": ["Will the computer I have already work?", "Will my own computer work?", "Is my own computer okay?"],
-         "responses": ["Any computer made in the past five years with a 10/100 Mbs Ethernet card will work on Luther’s network. Older operating systems such as those prior to Windows Vista and OSX 10.9 are not allowed on Luther's registered network, may experience some troubles and are not necessarily supported by the Help Desk."],   "context_set": ""
-        },
- {"tag": "what_else_to_buy",
-         "patterns": ["What else will I need to buy?", "What else do I need?", "Is there anything else I should purchase?"],
-         "responses": ["It is highly recommended you bring a CAT5 or CAT6 network (Ethernet) cable. Even if you plan on using wireless, a cable can help. The Technology Help Desk also recommends bringing a USB Thumb Drive or Flash Drive. Luther College is a Google Apps for Education institution. Therefore, we use Google Email, Calendar, and Docs and these are available at no cost to you. In addition, Microsoft Office (specifically Word, Excel, and PowerPoint) is available on lab and classroom computers."],"context_set": ""},
- {"tag": "viruses_malware",
-     "patterns": ["What about viruses and malware?", "Should I be worried about viruses?", "What can you tell me about viruses or malware?"],
-         "responses": ["In order to connect to ResNet, all computers must have up-to-date anti-virus software and critical security patches. The network will search for and quarantine computers that do not comply.You can use antivirus programs like Sophos, McAfee, Norton, Symantec, or AVG, some of which are free and/or included with your computer’s operating system. For more information, visit https://www.luther.edu/helpdesk/antivirus/.Spyware and Malware has become a major problem with computers in recent years. See our Safe Computing page for information on how to stay safe and keep your computer healthy. Should you become infected or have troubles with viruses, the Help Desk can provide tools and information to assist you. See more at the Virus Removal page at www.luther.edu."],"context_set": ""
-        },
- {"tag": "email_account",
-         "patterns": ["When will I get my email account?", "What about my email account?", "When will my email account be read?"],
-         "responses": ["When you apply to Luther, you will receive an email notification that contains your Luther Norse Key. Keep it in a safe place as your Norse Key is the user name and password to access my.luther.edu to check your application status, your pending correspondence, your Luther financial aid data and search for course sections. Once you are admitted to Luther, you will be able to use your Norse Key for your Luther email, web pages, network storage, access to online course material, and Library resources. You will have access to these services long before you show up to Luther and can begin using your Norse Key immediately."],   "context_set": ""
-        },
-    {"tag": "classes_use_internet",
-    "patterns": ["Will my classes use the internet and computers?", "Will classes require me to have a computer?", "Will classes require me to have internet access?"],
+       "patterns": ["Do I need a computer?", "Is a computer needed for classes?", "Computer required?"],
+       "responses": ["Most Luther students bring a computer to campus, but it’s not required. Luther has over 500 computers in 20+ general computing labs and classrooms including mini labs in most residence halls. In additional, there are specialized departmental labs, computer stations in the Union, Kiosks in various locations around campus (e.g. Union, Preus Library, Koren, Sampson-Hoffland, Regents Center) and laptops available for check out in the Library."]},
+{"tag": "internet_acces_in_dorms",
+       "patterns": ["Can I get connected to the internet from my room?", "Do I have internet access in my dorm room?", "Access to internet in residence halls?"],
+        "responses": ["Yes. All students living in the dorms have access to ResNet, a high speed Internet connection that is provided at no additional charge. More information can be found at the ResNet Service Page on www.luther.edu"],
+"context_set": ""
+      },
+{"tag": "setup_personal_network",
+       "patterns": ["Can I setup my own network in my room?", "Can I create my own network?", "Is it possible for me to create my own network in my dorm?"],
+       "responses": ["No. In order to preserve the health of the campus network, individuals are not allowed to connect personal routers or switches to their network port. This restriction includes personal wireless devices such as routers, hubs, or switches (a.k.a. access points). While these devices are often desirable to individual users, use can interfere with the network and cause large-scale network outages. Luther’s wireless initiative aims to provide wireless access to public spaces in residence halls when technically feasible."],   "context_set": ""
+      },
+{"tag": "type_of_compter",
+       "patterns": ["If I buy a computer, what type should I buy?", "What kind of computer should I buy?", "What computer should I get?"],
+       "responses": ["Luther does not require a specific brand or type of computer, nor do we sell new computers. However we do recommend the following two companies, Apple and Dell, who offer discounts to students. As a general rule, the higher the specifications on a computer, the longer its useful lifespan will be. Every year, ITS rolls out new computers to the faculty. The below are the technical specs of the machines they’ll be receiving this year. We hope this gives you an idea of what we think will work for the faculty and maybe an idea of what to purchase for yourself."],   "context_set": ""
+      },
+{"tag": "wireless_internet_campus",
+       "patterns": ["Is there wireless internet on campus?", "Is there internet on campus?", "Is there internet access at Luther?"],
+       "responses": ["Yes. Wireless Internet is available in all campus buildings and residence halls. For best performance on Luther’s wireless network, make sure your device supports 802.11ac wireless standard. Most current devices support this. Note that as of Fall 2016, 802.11b is no longer supported on campus. (Other wireless standards will work but at decreased performance.) Visit https://www.luther.edu/helpdesk/wirelessnetworks/ for complete information."],   "context_set": ""
+      },
+{"tag": "laptop_or_desktop",
+       "patterns": ["Should I buy a laptop or desktop?", "Is a laptop or desktop recommended?", "Which is prefered, a laptop or a desktop?"],
+       "responses": ["This comes down to a personal choice. Personal laptops are not required nor expected. A laptop takes up less space and with a wireless card, can be used just about anywhere on campus. The cost of a laptop is higher though. Desktop computers are cheaper and generally have more power. However, you will give up space in your room plus have to purchase a monitor, external keyboard, and mouse."],   "context_set": ""
+      },
+{"tag": "will_my_computer_work",
+       "patterns": ["Will the computer I have already work?", "Will my own computer work?", "Is my own computer okay?"],
+       "responses": ["Any computer made in the past five years with a 10/100 Mbs Ethernet card will work on Luther’s network. Older operating systems such as those prior to Windows Vista and OSX 10.9 are not allowed on Luther's registered network, may experience some troubles and are not necessarily supported by the Help Desk."],   "context_set": ""
+      },
+{"tag": "what_else_to_buy",
+       "patterns": ["What else will I need to buy?", "What else do I need?", "Is there anything else I should purchase?"],
+       "responses": ["It is highly recommended you bring a CAT5 or CAT6 network (Ethernet) cable. Even if you plan on using wireless, a cable can help. The Technology Help Desk also recommends bringing a USB Thumb Drive or Flash Drive. Luther College is a Google Apps for Education institution. Therefore, we use Google Email, Calendar, and Docs and these are available at no cost to you. In addition, Microsoft Office (specifically Word, Excel, and PowerPoint) is available on lab and classroom computers."],"context_set": ""},
+{"tag": "viruses_malware",
+   "patterns": ["What about viruses and malware?", "Should I be worried about viruses?", "What can you tell me about viruses or malware?"],
+       "responses": ["In order to connect to ResNet, all computers must have up-to-date anti-virus software and critical security patches. The network will search for and quarantine computers that do not comply.You can use antivirus programs like Sophos, McAfee, Norton, Symantec, or AVG, some of which are free and/or included with your computer’s operating system. For more information, visit https://www.luther.edu/helpdesk/antivirus/.Spyware and Malware has become a major problem with computers in recent years. See our Safe Computing page for information on how to stay safe and keep your computer healthy. Should you become infected or have troubles with viruses, the Help Desk can provide tools and information to assist you. See more at the Virus Removal page at www.luther.edu."],"context_set": ""
+      },
+{"tag": "email_account",
+       "patterns": ["When will I get my email account?", "What about my email account?", "When will my email account be read?"],
+       "responses": ["When you apply to Luther, you will receive an email notification that contains your Luther Norse Key. Keep it in a safe place as your Norse Key is the user name and password to access my.luther.edu to check your application status, your pending correspondence, your Luther financial aid data and search for course sections. Once you are admitted to Luther, you will be able to use your Norse Key for your Luther email, web pages, network storage, access to online course material, and Library resources. You will have access to these services long before you show up to Luther and can begin using your Norse Key immediately."],   "context_set": ""
+      },
+  {"tag": "classes_use_internet",
+  "patterns": ["Will my classes use the internet and computers?", "Will classes require me to have a computer?", "Will classes require me to have internet access?"],
 "responses": ["Luther classes often make use of a variety of Internet and computer resources. Many professors use KATIE which allows them to make announcements, post assignments, give quizzes, and more. Your first experience with KATIE will be during Student Registration and Placement Tests."]},
- {"tag": "helpdesk_fix_computers",
-         "patterns": ["Will the Help Desk fix my computer?", "Can ITS fix my computer?", "Can the technology center fix my computer?"],
-         "responses": ["The Technology Help Desk will make minor to moderate repairs to personal computers at no charge, however the owner is responsible for the cost of parts. Typical services include boot and driver issues, OS installs, hard drive failures, some component replacement, etc. We don't cover all major repairs or repair phones, gaming consoles, printers, etc. We reserve the right to refuse service, and the owner assumes all liability. Repairs are accepted as workload allows and typically not during breaks, summer, J-term, or during the first two weeks of the semester. For more information see our Desktop & Laptop Support page."],   "context_set": ""
-        },
-    {"tag": "computer_work_study",
-         "patterns": ["Can I use my computer skills in work-study job?", "Are there work-study positions that are technology based?", "Are there technology work study positions available?"],
+{"tag": "helpdesk_fix_computers",
+       "patterns": ["Will the Help Desk fix my computer?", "Can ITS fix my computer?", "Can the technology center fix my computer?"],
+       "responses": ["The Technology Help Desk will make minor to moderate repairs to personal computers at no charge, however the owner is responsible for the cost of parts. Typical services include boot and driver issues, OS installs, hard drive failures, some component replacement, etc. We don't cover all major repairs or repair phones, gaming consoles, printers, etc. We reserve the right to refuse service, and the owner assumes all liability. Repairs are accepted as workload allows and typically not during breaks, summer, J-term, or during the first two weeks of the semester. For more information see our Desktop & Laptop Support page."],   "context_set": ""
+      },
+  {"tag": "computer_work_study",
+       "patterns": ["Can I use my computer skills in work-study job?", "Are there work-study positions that are technology based?", "Are there technology work study positions available?"],
 "responses": ["Good with computers? Enjoy helping people? Then considering filling out an application with the Help Desk or Multimedia. We hire in J-Term and Spring semesters and do not require you to be an MIS or CS major. Visit https://www.luther.edu/its/about/recruitments/ for more information and to apply"],   "context_set": ""
-        },
-                       {"tag": "luther_info_online",
-         "patterns": ["Can I get my Luther personal information online?", "Can I access my Luther information on the web?", "Is my Luther information available online?"],
-         "responses": ["Much of your personal Luther information – grades, class registration, and financial documents – are available at http://my.luther.edu/. Access is protected by your Norse Key."],   "context_set": ""
-        },
-    {"tag": "cell_phones",
-         "patterns": ["Can I use my cell phone at Luther?", "What about using cell phones on campus?", "Will my cell phone work at Luther?"],
-         "responses": ["Current students have found that many different providers and coverage plans service the Decorah area, but it’s a good idea to check with your provider. It’s also a good idea to get some experience with using your cell phone on campus before relying on it as your primary means of communication. The physical structure of some campus buildings may impede clear connections. Providers with a local Decorah office include U.S. Cellular, Verizon, and iWireless."],   "context_set": ""
-        },
-    {"tag": "id_cards",
-         "patterns": ["How can I replace a lost or damage ID card?", "What do I do if I lose my ID card?", "What happens if I have lost or damage my ID card?"],
-         "responses": ["ID Cards can be replaced by visiting the Dining Services office in the Union. More information can be found at http://www.luther.edu/dining/identificationcards/."],   "context_set": ""
-        },
-    {
+      },
+                     {"tag": "luther_info_online",
+       "patterns": ["Can I get my Luther personal information online?", "Can I access my Luther information on the web?", "Is my Luther information available online?"],
+       "responses": ["Much of your personal Luther information – grades, class registration, and financial documents – are available at http://my.luther.edu/. Access is protected by your Norse Key."],   "context_set": ""
+      },
+  {"tag": "cell_phones",
+       "patterns": ["Can I use my cell phone at Luther?", "What about using cell phones on campus?", "Will my cell phone work at Luther?"],
+       "responses": ["Current students have found that many different providers and coverage plans service the Decorah area, but it’s a good idea to check with your provider. It’s also a good idea to get some experience with using your cell phone on campus before relying on it as your primary means of communication. The physical structure of some campus buildings may impede clear connections. Providers with a local Decorah office include U.S. Cellular, Verizon, and iWireless."],   "context_set": ""
+      },
+  {"tag": "id_cards",
+       "patterns": ["How can I replace a lost or damage ID card?", "What do I do if I lose my ID card?", "What happens if I have lost or damage my ID card?"],
+       "responses": ["ID Cards can be replaced by visiting the Dining Services office in the Union. More information can be found at http://www.luther.edu/dining/identificationcards/."],   "context_set": ""
+      },
+  {
 "tag": "closed_masterclass_sessions",
-         "patterns": ["What is the difference between the closed sessions and masterclass sessions?", "Is there a difference in the closed versus masterclass dorian sessions?", "Tell me about master classes sessions versus closed sessions for dorian"],
-         "responses": ["Closed sessions are 20 minutes long and appropriate for all ability levels. The student plays his or her prepared piece for one clinician and receives verbal and written feedback from that clinician. Memorization is not required. A student’s private instructor and/or a parent are allowed to attend a closed session. Masterclass sessions are appropriate for advanced students and are 20 or 30 minutes long. These sessions are open to the public and held in larger performance venues. The festival guest clinician along with three Luther piano and organ faculty hear the performance and give public verbal comments. Performances must be memorized"]},
-                       {"tag": "evening_recitals", 
- "patterns": ["What is the difference between the closed sessions and masterclass sessions?", "Is there a difference in the closed versus masterclass dorian sessions?", "Tell me about master classes sessions versus closed sessions for dorian"],
-           "responses": ["There are two honors recitals that take place at the Dorian Keyboard Festival.  The 3:00 honors recital is intended for younger students, and the 5:00 honors recital is intended for older, more advanced students. Students are selected for these recitals based on their performance earlier in the day for the festival clinicians. All recitals take place in the Noble Recital Hall and are free and open to the public."]},
-    {"tag": "all_days",
- "patterns": ["Do I need to attend all three days of the festival?", "Do I have to be there for the whole thing?", "Do I have to be there for all three days?"],
-         "responses": ["All are welcome to attend all of the festival events, but it is very common for students to only attend Saturday's events, especially when there is a long drive involved.  If you would like to attend the Friday evening recital or the Sunday Luther Student Masterclass, you can request to stay on campus during the festival if you are a high school student by marking this option on your registration form."],   "context_set": ""
-        },
-    {"tag": "afternoon_workshop",
- "patterns": ["What is offered in the afternoon workshop?", "Is there an afternoon workshop?", "What is the afternoon workshop about?"],
-         "responses": ["Every year, we hold a workshop for both teachers and students, and the topics vary every year. In the past, we have had topics such as collaboration as a pianist, harpsichord basics, piano mechanisms and acoustics, and many more. This year, we are holding two simultaneous workshops. Brian Knox will present a workshop titled, 'What's Inside Your Piano' and Jordan Buchholtz and Charles Hoeft will present a workshop titled, 'Preparing for a Professional Life in Music.'  Students and teachers can choose which session they would like to attend."],"context_set": ""
-        }
-             
- ]}
+       "patterns": ["What is the difference between the closed sessions and masterclass sessions?", "Is there a difference in the closed versus masterclass dorian sessions?", "Tell me about master classes sessions versus closed sessions for dorian"],
+       "responses": ["Closed sessions are 20 minutes long and appropriate for all ability levels. The student plays his or her prepared piece for one clinician and receives verbal and written feedback from that clinician. Memorization is not required. A student’s private instructor and/or a parent are allowed to attend a closed session. Masterclass sessions are appropriate for advanced students and are 20 or 30 minutes long. These sessions are open to the public and held in larger performance venues. The festival guest clinician along with three Luther piano and organ faculty hear the performance and give public verbal comments. Performances must be memorized"]},
+                     {"tag": "evening_recitals", 
+"patterns": ["What is the difference between the closed sessions and masterclass sessions?", "Is there a difference in the closed versus masterclass dorian sessions?", "Tell me about master classes sessions versus closed sessions for dorian"],
+         "responses": ["There are two honors recitals that take place at the Dorian Keyboard Festival.  The 3:00 honors recital is intended for younger students, and the 5:00 honors recital is intended for older, more advanced students. Students are selected for these recitals based on their performance earlier in the day for the festival clinicians. All recitals take place in the Noble Recital Hall and are free and open to the public."]},
+  {"tag": "all_days",
+"patterns": ["Do I need to attend all three days of the festival?", "Do I have to be there for the whole thing?", "Do I have to be there for all three days?"],
+       "responses": ["All are welcome to attend all of the festival events, but it is very common for students to only attend Saturday's events, especially when there is a long drive involved.  If you would like to attend the Friday evening recital or the Sunday Luther Student Masterclass, you can request to stay on campus during the festival if you are a high school student by marking this option on your registration form."],   "context_set": ""
+      },
+  {"tag": "afternoon_workshop",
+"patterns": ["What is offered in the afternoon workshop?", "Is there an afternoon workshop?", "What is the afternoon workshop about?"],
+       "responses": ["Every year, we hold a workshop for both teachers and students, and the topics vary every year. In the past, we have had topics such as collaboration as a pianist, harpsichord basics, piano mechanisms and acoustics, and many more. This year, we are holding two simultaneous workshops. Brian Knox will present a workshop titled, 'What's Inside Your Piano' and Jordan Buchholtz and Charles Hoeft will present a workshop titled, 'Preparing for a Professional Life in Music.'  Students and teachers can choose which session they would like to attend."],"context_set": ""
+      }
 
+{"tag": "firstyearhousing",
+  "patterns": ["Where do first years live?", "What residence halls do freshmen live in?", "Where do freshmen live?"],
+  "responses": ["First-year students have the option of living in either Brandt, Ylvisaker, or Olson hall."]},
+
+{"tag": "upperclassmenhousing",
+  "patterns": ["Where do sophomores live?", "Where do juniors live?", "where do seniors live?", "where do upperclassmen live?"],
+  "responses": ["Upperclassmen (this includines sophomores, juniors, and seniors) can chose to live in Farwell Hall, Larsen Hall, Miller and Dieseth halls (also known as Towers), Baker Village, College Apartments, Pairie Houses, or Sustainability House."]},             
+ 
+{"tag": "offcampushousing",
+  "patterns": ["Can I live off campus?", "Can students live of campus?", "Is living off campus an option?"],
+  "responses": ["All full-time students are required to live in college-owned housing unless married, 23 years of age by the first day of classes, or commuting from their legal guardians’ homes within 30 miles of campus. Off-campus living is limited and is permitted only when there is a shortage of rooms in college residence halls. Students must receive written permission to life off campus"]},
+
+{"tag": "whatisbrandt",
+  "patterns": ["What is Brandt?", "Is Brandt a residence hall?", "What building is Brandt?"],
+  "responses": ["Brandt Hall is first-year residence hall in the center of campus, providing quick access to Preus Library and Jenson-Noble Hall of Music. Brandt Hall houses 355 first-year students in two-, three-, and four-person rooms. Most of the rooms house three students. The building's west and east wings are connected by study and social lounges."]},
+ 
+{"tag": "whatisylvisaker",
+  "patterns": ["what is Ylvisaker?", "what is ylvi?", "Is ylvi a residence hall?"],
+  "responses": ["Ylvisaker Hall is a first-year residence hall located across from Sampson Hoffland Laboratories and Valders Hall of Science and near the Center for Faith and Life. Ylvisaker Hall houses 256 first-year students in two-person rooms."]},
+
+{"tag": "whatissolson",
+  "patterns": ["What is olson?", "is olson a residence hall?", "is olson a dorm for first years?"],
+  "responses": ["Olson Hall is a first-year and upper-class residence hall located near Koren and the Center for the Arts. Olson Hall houses 41 first-year students in two-person rooms. Upper-class students are housed in an adjoining wing in four-person suites (two rooms connected by a common room)."]},
+ 
+ {"tag": "whatisfarwell",
+  "patterns": ["what is farwell?", "is farwell a residence hall?", "is farwell a dorm?"],
+  "responses": ["Farwell Hall is a upper-class residence hall that's located nearby Main Building as well as down the street from Dahl Centennial Union. The ground floor of Farwell provides quick access to Carlson Stadium and Regents Center. Farwell Hall houses 259 students in one- and two-person rooms, which comprise three clusters on each floor. Each cluster has its own common living area and set of bathrooms."]},
+
+{"tag": "whatistowers",
+  "patterns": ["What is miller?", "What is dieseth?", "what is towers?", "is towers a residence hall?"],
+  "responses": ["Miller and Dieseth (Towers) are upper-class residence halls located nearby Valders Hall of Science and Regents Center. Combined they house 735 students, primarily of which are sophomores and juniors, in two-person rooms and suites. They're connected via Brunsdale Lounge, which functions as a social meeting place as well as popular study location for students."]},
+
+{"tag": "whatislarsen",
+  "patterns": ["What is larsen?", "is larsen a residence hall?", "is larsen a dorm?"],
+  "responses": ["Larsen Hall is a upper-class residence hall that's located nearby Main Building as well as down the street from Koren and the Center for the Arts. Larsen Hall houses 145 students in one-, two-, and three-person rooms. In addition to serving as a residence hall, Larsen also houses the offices for Health Service, Counseling Service, and the Center for Global Learning."]},
+
+{"tag": "whatisbakervillage",
+  "patterns": ["what is baker village?", "is baker village a dorm?", "is baker village a residence hall?"],
+  "responses": ["Baker Village offers upper class Luther students Scandinavian-style architecture set at the nexus of a rustic farm park area, a flowering prairie, and a lush wooded area. Baker Village currently offers three styles of townhouses, accommodating up to a total of 112 senior students. Eligible students have earned 72 or more credits by the end of fall semester of their junior year."]},
+
+{"tag": "whatarecollegeapartments",
+  "patterns": ["what are college apartments?", "can you tell me more about college apartments?", "give me more info about college apartments?"],
+  "responses": ["The college apartments were built in the residential neighborhood on Ridge Road (just east of campus) in the early 1970s. The one bedroom units house traditional students; limited housing is available for married students upon request. The air conditioned apartments provide a more independent living environment for upper class students while retaining campus connections. A board plan is required for students living in apartments without kitchens."]},
+
+{"tag": "whatarepaririehouses",
+  "patterns": ["What are prairie houses?", "can you tell me more about pairie housing?", "are pairie houses dorms?"],
+  "responses": ["Prairie Houses are upper-class residence halls located in nearby residential neighborhoods and within a five minute walk of Luther campus. Named after the Lutheran congregations that founded the college, Spring Prairie, Rock Prairie, and Jefferson Prairie provide groups of seven students of the same sex the opportunity to live together as a peer group. To be eligible, students must have earned 72 or more credits by the end of fall semester of their junior year."]},
+
+{"tag": "whatissushouse",
+  "patterns": ["what is Sustainability house?", "can you tell me more about Sustainability house?", "do students live in Sustainability house?"],
+  "responses": ["The Luther College Sustainability House is a co-ed, two-story home located in a residential neighborhood within walking distance of campus. This house offers a living-learning environment where students work together to explore what it means to live an environmentally, socially and fiscally sustainable lifestyle. The focus of the house varies slightly from year to year based on the interests of the members. Each year the house chooses a faculty advisor whose role it is to provide guidance and support to the house community. It is common for the house to host book discussions, sustainability-themed movie nights, open houses and potlucks."]},
+
+{"tag": "sportsdivision",
+  "patterns": ["what sports division is luther?", "what division is luther?", "what division is luther for athletics?"],
+  "responses": ["Luther College is a division III school."]},
+
+{"tag": "musicenembles",
+  "patterns": ["what music ensembles does luther have?", "what music groups can I be a part of?", "what bands are there?", "what choirs are there?"],
+  "responses": ["Luther has many music ensembles. Six choirs, three bands, three orchestras, and various other music ensembles such as acapella groups and hand bell choir."]},
+ ]}
