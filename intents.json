@@ -5,7 +5,37 @@
 {"tag": "goodbye",
   "patterns": ["Good bye", "See ya", "Goodbye", "Bye", "talk to you again"],
   "responses" : ["Thanks for talking. Come back again with any other questions!"]},
-
+{"tag":"majors",
+  "patterns":["How many majors do Luther have?","What majors can I find at Luther?","What majors does Luther have?"],
+  "responses":["Luther has more than 60 majors and minors, including: Accounting, Africana Studies, Anthropology, Art, Art History, Asian Studies, Biblical Languages, Biology, Chemistry, Chinese, Classics, Communication Studies, Computer Science, Dance, Data Science, Economics, English, Education, Environmental Studies, Foreign Culture, French, General Studies, German, Greek, Health, Hebrew, History, International Business, International Studies, Intersections, Journalism, Latin, Library and Information Studies, Linguistics, Management, Mathematics, Museum Studies, Music, Neuroscience, Nordic Studies, Nursing, Paideia, Philosophy, Physical Education, Physics, Political Science, Psychology, Religion, Science, Scandinavian Studies, Social Work, Sociology, Spanish, Theatre, Women and Gender Studies"]},
+{"tag":"ACT/SAT",
+  "patterns":["How much should I have for my ACT to get to Luther?","How high should my SAT be to get into Luther?","What is the average ACT/SAT score of Luther students?","How high do Luther requires ACT/SAT?"],
+  "responses":["At Luther, students' SAT range is 928-1198 and ACT is 23-28"]},
+{"tag":"LutherDifferences",
+  "patterns":["What makes Luther different from other liberal arts colleges?","Why should I attend Luther and not other liberal arts college?","How is Luther different?","Why Luther?"],
+  "responses":["Luther values its heritage, just as it values the diversity of its students, staff, and faculty, who hail from many faith backgrounds and heritages.The college strives to make Luther affordable for all students by offering scholarships, need-based aid, work study, and loan programs. The college’s learning philosophy highlights connections between disciplines. Its thoughtful and rigorous curriculum moves beyond immediate interests toward engagement in the larger world. This approach to education helps Luther earn inclusion in the top tier of national liberal arts colleges in the U.S. News and World Report’s college guide.Luther is a Phi Beta Kappa institution, an honor belonging to only 10 percent of colleges and universities, and its graduates regularly earn awards, such as Fulbright, Rhodes, Goldwater, and NCAA Postgraduate scholarships.Luther students receive an education from qualified professors who are passionate about what they teach and fully invested in the college and its students.A student-to-faculty ratio of 11:1 gives students an exceptional classroom experience, and Luther’s faculty also mentor students, act as advisers, and learn and research in collaboration with students.Luther values learning beyond the classroom. Internships, externships, and opportunities to collaborate with faculty on research are vital components of a Luther education—and they help test career goals and build résumés.Study-away experiences are another way that students learn beyond the classroom, and they’re key to the global perspective that Luther promotes. Each year more than 400 Luther students study abroad in 41 countries. Many undergraduates take advantage of study-away opportunities during January Term, a three-week period between semesters that allows students to study a particular subject in depth.Luther’s 2,050 students are highly engaged in campus life. Almost 27 percent of them compete in one or more of the college’s 19 intercollegiate sports, and about 44 percent play intramural sports.Around 875 students participate in the school’s six choirs, three bands, three orchestras, two jazz bands, and numerous smaller ensembles, all of which combine to form one of the world’s largest, most acclaimed collegiate music programs.Around 875 students participate in the school’s six choirs, three bands, three orchestras, two jazz bands, and numerous smaller ensembles, all of which combine to form one of the world’s largest, most acclaimed collegiate music programs.Student involvement, a Luther hallmark, is also evident in more than 95 student organizations, including a campus newspaper and radio station, as well as many service and honor societies.Luther takes seriously its mission to “practice joyful stewardship of the resources around us.” Green campus operations, partnerships with local businesses, and academic courses that incorporate sustainability have earned Luther a number of environmental leadership awards, including a 2012 Second Nature Climate Leadership Award"]
+},
+{"tag":"scheduleVisit",
+  "patterns":["How can I schedule a visit?","what should I do to visit Luther?","How do I visit Luther?","Can I schedule a visit online?"],
+  "responses":["You can schedule a visit by picking up a date here: http://www.luther.edu/admissions/visit/"]},
+{"tag":"applyToLuther",
+  "patterns":["How do I apply to Luther?","what steps do I have to take to apply to Luther?","Where could I find the application for Luther?"],
+  "responses":["Luther operates on a rolling admissions cycle, which means we begin accepting students in September and continue to do so each week until the class is full. The step by step guide can be found here: http://www.luther.edu/admissions/apply/how/"]},
+{"tag":"requirementsToApplyToLuther",
+  "patterns":["What are the requirements to apply to Luther?","What classes should I take in high school to be eligable for Luther?","What are the admissions requirements that Luther has?","What requirements should I fulfill to get admitted to Luther?","What requirements should I have to get accepted at Luther?"],
+  "responses":["In order to be considered for first-year admission, you should be within two semesters of graduation from an accredited high school or homeschool, and should complete the following college preparatory coursework:
+    1. Four years of English (may include one year of speech, communications, or journalism)
+    2.Three years of mathematics
+    3.Three years of social science
+    4.Two years of natural science (including one year of laboratory science)
+    5.Two years of foreign language study (recommended, not required)
+Applicants who do not meet these standards will be considered for admission if they submit above-average ACT or SAT scores."]},
+{"tag":"transfer",
+  "patterns":["Can I transfer to Luther?","Does Luther accept transfer students?","How do I transfer to Luther?","Where can I find information about transfering to Luther?"],
+  "responses":["We welcome and encourage transfer students to apply to Luther. Transfer students bring diverse experiences and new perspectives that enhance the overall learning experience on our campus. More information about how to transfer to Luther can be found here: http://www.luther.edu/admissions/apply/transfer/"]},
+{"tag":"newstudents",
+  "patterns":["What should I expect for my first day at Luther?","Will there be any orientation for first year/ freshmen?","Will there be any activities for my move in day?","What is it like after moving in to Luther?"],
+  "responses":["New Student Orientation is designed to help first-year and transfer students make a successful transition into the Luther community. During orientation, you will learn more about Luther and the college’s academic and community expectations, interact in meaningful ways with other new students, faculty, and staff, acquire some of the tools necessary to be successful in college, and begin to map your future. You can look for more details for Orientation Week at: http://www.luther.edu/new-students/orientation/"]},
 {"tag": "christmas and spring break meals",
     "patterns": ["Are meals served on campus during Christmas and spring break?","will there be meals during Christmas break and spring break", "will there be meal served on campus during Christmas and spring break?"],
 "responses": ["No, the cafeteria is closed, but check out Oneota. Oneota is often open for breakfast and lunch during the week."]},
@@ -335,7 +365,7 @@
 "tag": "closed_masterclass_sessions",
          "patterns": ["What is the difference between the closed sessions and masterclass sessions?", "Is there a difference in the closed versus masterclass dorian sessions?", "Tell me about master classes sessions versus closed sessions for dorian"],
          "responses": ["Closed sessions are 20 minutes long and appropriate for all ability levels. The student plays his or her prepared piece for one clinician and receives verbal and written feedback from that clinician. Memorization is not required. A student’s private instructor and/or a parent are allowed to attend a closed session. Masterclass sessions are appropriate for advanced students and are 20 or 30 minutes long. These sessions are open to the public and held in larger performance venues. The festival guest clinician along with three Luther piano and organ faculty hear the performance and give public verbal comments. Performances must be memorized"]},
-                       {"tag": "evening_recitals", 
+                       {"tag": "evening_recitals",
  "patterns": ["What is the difference between the closed sessions and masterclass sessions?", "Is there a difference in the closed versus masterclass dorian sessions?", "Tell me about master classes sessions versus closed sessions for dorian"],
            "responses": ["There are two honors recitals that take place at the Dorian Keyboard Festival.  The 3:00 honors recital is intended for younger students, and the 5:00 honors recital is intended for older, more advanced students. Students are selected for these recitals based on their performance earlier in the day for the festival clinicians. All recitals take place in the Noble Recital Hall and are free and open to the public."]},
     {"tag": "all_days",
@@ -384,7 +414,5 @@
   "patterns": ["How many majors are there?", "What can I major in?", "What can I minor in?", "How many programs are offered?"],
           "responses": ["There are 60+ Majors, Minors, and Programs at Luther"],
           "context_set": ""
-          }
-             
+  }
  ]}
-
