@@ -26,13 +26,7 @@
   "responses":["Luther operates on a rolling admissions cycle, which means we begin accepting students in September and continue to do so each week until the class is full. The step by step guide can be found here: http://www.luther.edu/admissions/apply/how/"]},
 {"tag":"requirementsToApplyToLuther",
   "patterns":["What are the requirements to apply to Luther?","What classes should I take in high school to be eligable for Luther?","What are the admissions requirements that Luther has?","What requirements should I fulfill to get admitted to Luther?","What requirements should I have to get accepted at Luther?"],
-  "responses":["In order to be considered for first-year admission, you should be within two semesters of graduation from an accredited high school or homeschool, and should complete the following college preparatory coursework:
-    1. Four years of English (may include one year of speech, communications, or journalism)
-    2.Three years of mathematics
-    3.Three years of social science
-    4.Two years of natural science (including one year of laboratory science)
-    5.Two years of foreign language study (recommended, not required)
-Applicants who do not meet these standards will be considered for admission if they submit above-average ACT or SAT scores."]},
+  "responses":["In order to be considered for first-year admission, you should be within two semesters of graduation from an accredited high school or homeschool, and should complete the following college preparatory coursework:  1. Four years of English (may include one year of speech, communications, or journalism) 2.Three years of mathematics 3.Three years of social science 4.Two years of natural science (including one year of laboratory science) 5.Two years of foreign language study (recommended, not required) Applicants who do not meet these standards will be considered for admission if they submit above-average ACT or SAT scores."]},
 {"tag":"transfer",
   "patterns":["Can I transfer to Luther?","Does Luther accept transfer students?","How do I transfer to Luther?","Where can I find information about transfering to Luther?"],
   "responses":["We welcome and encourage transfer students to apply to Luther. Transfer students bring diverse experiences and new perspectives that enhance the overall learning experience on our campus. More information about how to transfer to Luther can be found here: http://www.luther.edu/admissions/apply/transfer/"]},
